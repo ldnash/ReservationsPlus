@@ -1,20 +1,17 @@
 .remoteness{
-height: 100px;
 width: 100%;
 margin-top: 10px;
-
+position:relative;
 }
 
 .remote-icon{
-height:100%;
-position: static;
-float: left;
+height:50px;
+
 }
 
 .remote-icon-right{
-height:100%;
-position: static;
-float: right;
+height:50px;
+float:right;
 }
 
 .remote-title{
@@ -32,25 +29,29 @@ float: left;
 
 
 #light-title{
-background-color: #ff9900;
+
+}
+
+#light-progress{
+
 }
 
 #light{
-background-color: #ff9900;
+
 }
 
 #sound{
-background-color: #b5da55;
+
 }
 
 #sound-title{
-background-color: #b5da55;
+
 }
 
 #distance{
-background-color: #5f5f5f;
+
 }
 
 #distance-title{
-background-color: #5f5f5f;
+
 }
