@@ -5,6 +5,29 @@ margin-top: 10px;
 
 }
 
+.remote-icon{
+height:100%;
+position: static;
+float: left;
+}
+
+.remote-icon-right{
+height:100%;
+position: static;
+float: right;
+}
+
+.remote-title{
+padding:5px;
+display:inline-block;
+margin-top: 20px;
+}
+
+
+#light-title{
+background-color: #ff9900;
+}
+
 #light{
 background-color: #ff9900;
 }
