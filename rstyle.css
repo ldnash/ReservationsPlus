@@ -24,6 +24,12 @@ margin-top: 20px;
 color: #fff;
 }
 
+.fallback{
+width:100%;
+position: static;
+float: left;
+}
+
 
 #light-title{
 background-color: #ff9900;

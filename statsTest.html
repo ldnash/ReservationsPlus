@@ -8,18 +8,16 @@
 	<title>RIDC - Reservations+ Analytics</title>
 
 	<link href="bootstrap.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="jquery-1.11.2.min.js"></script>
 	<script type="text/javascript" src="bootstrap.min.js"></script>
 	<script type="text/javascript" src="d3.min.js"></script>
-	<script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="viz.js"></script>
 	<link href="rstyle.css" rel="stylesheet" type="text/css"/>
-
-	
-	
 
 </head>
 
 <!-- Navbar !-->
-<body>
+<body onload="init()">
 <div class="navbar navbar-top navbar-inverse" role = "navigation">
 	<div class = "container">
 		<div class="navbar-header">
@@ -33,7 +31,7 @@
 <div class = "container">
 <div class = "row">
 	<div class = "col-md-6">
-		<h1>Mather Lake Recreation Area</h1>
+		<h1>Mather Lake Campground</h1>
 		<form>
 			<div class="form-group">
 				<label for="facilityID">Facility ID</label>
@@ -49,24 +47,24 @@
 <div class = "row">
 	<div class = "col-md-6">
 		<h2>Typical Campsite Availability</h2>
-
 	</div>
+	
 	<div class = "col-md-6">
-		<h2>Facility Remoteness</h2>
-		<div class="remoteness" id="light">
-		<p>lightness</p>
-	</div>
+		<h2 onclick="viz();">Facility Remoteness</h2>
+			<div class="remote-title" id="light-title">Evening Darkness: <b>Dark</b></div>
+			<div class="remoteness" id="light">
+			<img class="remote-icon" src="icons/stars/light.png"/>
+			<img class="remote-icon-right" src="icons/stars/dark.png"/>
+			</div>
 		<div class="remoteness" id="sound">
 		<p>sound</p>
 		</div>
 		<div class="remoteness" id="far">
 		<p>remoteness</p>
 		</div>
+	</div>
 </div>
 </div>
 </div>
-
-
-	
 </body>
 </html>
