@@ -21,6 +21,7 @@ float: right;
 padding:5px;
 display:inline-block;
 margin-top: 20px;
+color: #fff;
 }
 
 
@@ -36,6 +37,14 @@ background-color: #ff9900;
 background-color: #b5da55;
 }
 
-#far{
-background-color: #ff00ff;
+#sound-title{
+background-color: #b5da55;
+}
+
+#distance{
+background-color: #5f5f5f;
+}
+
+#distance-title{
+background-color: #5f5f5f;
 }
