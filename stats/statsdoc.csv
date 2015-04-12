@@ -1,0 +1,2 @@
+FID,FACILITYID,FACLAT,FATLONG,FATNAME,ExI,noisef,Soundlvl,remoteness,lux,Lightness,Miles
+num,RIDB identifier, facility lat, facility long, RIDB name, unknown, noise (l50 raw), noise index, remoteness in meters, light (raw from raster 0-255), light index, remoteness in miles
