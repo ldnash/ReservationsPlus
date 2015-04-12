@@ -19,7 +19,7 @@
 </head>
 
 <!-- Navbar !-->
-<body>
+<body onload="init()">
 <div class="navbar navbar-top navbar-inverse" role = "navigation">
 	<div class = "container">
 		<div class="navbar-header">
@@ -33,7 +33,7 @@
 <div class = "container">
 <div class = "row">
 	<div class = "col-md-6">
-		<h1>(Facility Name Here)</h1>
+		<h1 id="pageTitle">(Facility Name Here)</h1>
 		<form>
 			<div class="form-group">
 				<label for="facilityID">Facility ID</label>
@@ -54,23 +54,47 @@
 	<div class = "col-md-6">
 		<h2>Facility Remoteness</h2>
 		<!-- Light !-->
-		<div class="remote-title" id="light-title">Evening Darkness: <b>Dark</b></div>
-		<div class="remoteness" id="light">
-			<img class="remote-icon" src="icons/stars/light.png"/>
-			<img class="remote-icon-right" src="icons/stars/dark.png"/>
+		<div class="panel panel-info" id="light">
+			<div class="panel-heading" id="light-title">Evening Darkness: <b>Dark</b></div>
+			<div class="panel-body">
+				<div class="progress" id="light-progress">
+					<div class="progress-bar" role="progressbar" id="light-progress-inner" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+					<span class="sr-only"></span>
+					</div>
+				</div>			
+				<img class="remote-icon" src="icons/stars/light.png"/>
+				<img class="remote-icon-right" src="icons/stars/dark.png"/>
+			</div>
 		</div>
-		<!-- Sound !-->
-		<div class="remote-title" id="sound-title">Noise Level: <b>High</b></div>
-		<div class="remoteness" id="sound">
-			<img class="remote-icon" src="icons/sound/quiet.png"/>
-			<img class="remote-icon-right" src="icons/sound/loud.png"/>
+		
+		<!-- Noise !-->
+		<div class="panel panel-warning" id="sound">
+			<div class="panel-heading" id="sound-title">Noise Level: <b>High</b></div>
+			<div class="panel-body">
+				<div class="progress" id="sound-progress">
+					<div class="progress-bar progress-bar-warning" role="progressbar" id="sound-progress-inner" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+					<span class="sr-only"></span>
+					</div>
+				</div>			
+				<img class="remote-icon" src="icons/sound/quiet.png"/>
+				<img class="remote-icon-right" src="icons/sound/loud.png"/>
+			</div>
 		</div>
+		
 		<!-- Distance !-->
-		<div class="remote-title" id="distance-title">Distance from Highway: <b>Less than a mile</b></div>
-		<div class="remoteness" id="distance">
-			<img class="remote-icon" src="icons/distance/close.png"/>
-			<img class="remote-icon-right" src="icons/distance/far.png"/>
+		<div class="panel panel-success" id="distance">
+			<div class="panel-heading" id="distance-title">Noise Level: <b>High</b></div>
+			<div class="panel-body">
+				<div class="progress" id="distance-progress">
+					<div class="progress-bar progress-bar-success" role="progressbar" id="distance-progress-inner" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+					<span class="sr-only"></span>
+					</div>
+				</div>			
+				<img class="remote-icon" src="icons/distance/close.png"/>
+				<img class="remote-icon-right" src="icons/distance/far.png"/>
+			</div>
 		</div>
+
 	</div>
 </div>
 </div>
