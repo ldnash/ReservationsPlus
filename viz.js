@@ -9,10 +9,14 @@ console.log('viz fired');
 	
 	// open json
 	$.getJSON("stats/mather.json",function(data){
+			title = data[0].FACNAME;
 			lite = data[0].Lux;
 			sound = data[0].SoundLvl;
 			distanceness = data[0].Miles;
 			console.log(lite);
+			
+			// Set page title.
+			$("#pageTitle").html(toTitleCase(title));
 			
 			
 			// set light progress bar and text
@@ -67,6 +71,11 @@ console.log('viz fired');
 		
 	
 
+}
+
+function toTitleCase(str)
+{
+    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
 }
 	
 	
