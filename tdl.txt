@@ -1,0 +1,15 @@
+Reservations Visualizations List
+
+1. Calendar Year Heatmap/Chart
+	Need: Date of reservation, potentially generalized to day/week, etc
+	Need: Number of campsites reserved on that date
+	Need: Capacity of that facility
+	
+2. Day of week map
+	(data needs same as above)
+	
+3. Light pollution viz
+
+4. Noise viz
+
+5. Road distance viz
